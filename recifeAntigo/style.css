@@ -1,0 +1,306 @@
+body {
+    height: fit-content;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+main{
+  width: 98%;
+  max-width: 1000px;
+}
+
+header{
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(62, 62, 62);
+  width: 100%;
+  justify-content: center;
+}
+header h1{
+color: red;
+}
+span{
+color: blue;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  
+}
+
+.guarda-chuva{
+  width: 40px;
+  height: 40px;
+}
+.historia{
+  position: relative;
+  animation-name: leftRight;
+  animation-duration: 2s;
+  display: flex;
+  /* align-items: center; */
+  margin-top: 50px;
+  
+}
+.hTexto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding:10px;
+}
+.hTexto p{
+  font-size: 0.8rem;
+}
+.hImg{
+  background-image: url(./imagens/centroCultural1.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+.image{
+  background-image: url(./imagens/centroCultural2.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+.hImg1{
+    background-image: url(./imagens/paco-alfandega.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+  }
+  .imagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+  .image2{
+    background-image: url(./imagens/paco-alfandega2.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+  }
+.texto{
+  width: 50%;
+  padding:10px;
+}
+.fTexto{
+  display: flex;
+}
+
+.fazer{
+  margin-top: 50px;
+  position: relative;
+  animation-name: rightLeft;
+  animation-duration: 2s;
+
+}
+.fazer p{
+  margin-bottom: 50px;
+}
+.maisInf{
+  position: relative;
+  animation-name: aparecer;
+  animation-duration: 2s;
+}
+li{
+  margin: 10px;
+  width: fit-content;
+}
+footer{
+  width: 100%;
+  position: relative;
+}
+.content{
+  display: flex;
+  position: relative;
+ 
+}
+.lua{
+  width: 20px;
+  justify-self: flex-end;
+  position: absolute;
+  left: 95%;
+}
+.lua:hover{
+width: 25px;
+}
+
+#inicio{
+
+
+  position: absolute;
+  left: 5px;
+  /* top: 80%; */
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 0;
+}
+#inicio:hover{
+  color: blue;
+}
+
+@keyframes leftRight{
+  0%{
+      left: -900px;
+      opacity: 0;
+  }
+  100%{
+      left: 0%;
+      opacity: 1;
+  }
+}
+ @keyframes rightLeft {
+     0% {
+         left: 1000px;
+         opacity: 0;
+     }
+     100% {
+         left: 0%;
+         opacity: 1;
+     }
+ }
+ @keyframes aparecer{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+ }
+
+ @media (max-width: 800px){
+  main {
+      width: 95%;
+      max-width: 1000px;
+      height: 100%;
+    }
+
+header {
+  margin-top: 30px;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(62, 62, 62);
+  width: 100%;
+  justify-content: center;
+}
+header h1{
+  color: red;
+  font-size: 2rem;
+    }
+.historia{
+  position: relative;
+  animation-name: leftRight;
+  animation-duration: 2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+    }
+.hImg {
+  background-image: url(./imagens/centroCultural1.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 450px;
+  }
+.hTexto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  }
+  
+.hTexto p {
+  font-size: 1rem;
+}
+.hImg1 {
+  background-image: url(./imagens/paco-alfandega.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 450px;
+}
+.image2 {
+  background-image: url(./imagens/paco-alfandega2.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 450px;
+}
+ }
+ @media (max-width:660px){
+  .fTexto {
+    display: flex;
+    flex-direction: column-reverse;
+    }
+  .lua {
+    width: 20px;
+    position: absolute;
+    left: 2%;
+    top: 0.5%;
+    position: absolute;
+    }
+  .image {
+    background-image: url(./imagens/centroCultural2.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    }
+  .texto {
+    width: 100%;
+    padding: 0px;
+  }
+  .hImg {
+    background-image: url(./imagens/centroCultural1.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    }
+  .hTexto p {
+    font-size: 1rem;
+    margin: 0%;
+    }
+  .hImg1 {
+    background-image: url(./imagens/paco-alfandega.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    }
+  .image2 {
+    background-image: url(./imagens/paco-alfandega2.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    }
+  header h1 {
+    color: red;
+    font-size: 1.5rem;
+    }
+ }
